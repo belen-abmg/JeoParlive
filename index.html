@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./estilos.css">
+        <title>Proyecto Final</title>
+    </head>
+    <body>
+        <section>
+            <!--Pagina de Inicio-->
+            <div class="pagInicio" id="pagInicio">
+                <!--Boton de siguiente-->
+                <button class="botonInicio" onclick="bienvenida()">INICIAR</button>
+            </div>
+
+            <!--Pagina de categorias-->
+            <div class="pagCategorias" id="pagCategorias">
+                <!--Categorias-->
+                <p>categorias </p>
+                <!-- Boton para empezar a jugar -->
+                <button class="botonCateg" onclick="categorias()">JUGAR</button>
+            </div>
+
+            <!--Pagina de Puntajes-->
+            <div class="pagPuntaje" id="pagPuntaje">
+            
+                <!-- Dialogo que se intercambia por pregunta -->
+                <dialog id="pregunta">This is an open dialog window
+                    <button id="cerrarPreg" onclick="cerrarPregunta()"> X </button>
+                </dialog>
+
+                
+                <div class="categ">
+                    <!-- Nombres de las categorias  -->
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                    <p>HTML</p>
+                    <p>Lenguajes</p>
+                    <p>Syntax</p>
+              
+                    <!-- Botones de 100 distintas categorias -->
+                    <button class="cien" onclick="mostrarPregunta('css', 100)">100</button> 
+                    <button class="cien" onclick="mostrarPregunta('JS', 100)">100</button>
+                    <button class="cien" onclick="mostrarPregunta('HTML', 100)">100</button>
+                    <button class="cien" onclick="mostrarPregunta('lenguajes', 100)">100</button>
+                    <button class="cien" onclick="mostrarPregunta('syntax', 100)">100</button>
+                
+                    <!-- Botones de 200  -->
+                    <button class="doscientos" onclick="mostrarPregunta('css', 200)">200</button>
+                    <button class="doscientos" onclick="mostrarPregunta('JS', 200)">200</button>
+                    <button class="doscientos" onclick="mostrarPregunta('HTML', 200)">200</button>
+                    <button class="doscientos" onclick="mostrarPregunta('lenguajes', 200)">200</button>
+                    <button class="doscientos" onclick="mostrarPregunta('syntax', 200)">200</button>
+
+                    <!-- Botones de 300 -->
+                    <button class="trescientos" onclick="mostrarPregunta('css', 300)">300</button>
+                    <button class="trescientos" onclick="mostrarPregunta('JS', 300)">300</button>
+                    <button class="trescientos" onclick="mostrarPregunta('HTML', 300)">300</button>
+                    <button class="trescientos" onclick="mostrarPregunta('lenguajes', 300)">300</button>
+                    <button class="trescientos" onclick="mostrarPregunta('syntax', 300)">300</button>
+
+                    <!-- Botones de 400  -->
+                    <button class="cuatrocientos" onclick="mostrarPregunta('css', 400)">400</button>
+                    <button class="cuatrocientos" onclick="mostrarPregunta('JS', 400)">400</button>
+                    <button class="cuatrocientos" onclick="mostrarPregunta('HTML', 400)">400</button>
+                    <button class="cuatrocientos" onclick="mostrarPregunta('lenguajes', 400)">400</button>
+                    <button class="cuatrocientos" onclick="mostrarPregunta('syntax', 400)">400</button>
+                
+                    <!-- Botones de 500 -->
+                    <button class="quinientos" onclick="mostrarPregunta('css', 500)">500</button>
+                    <button class="quinientos" onclick="mostrarPregunta('JS', 500)">500</button>
+                    <button class="quinientos" onclick="mostrarPregunta('HTML', 500)">500</button>
+                    <button class="quinientos" onclick="mostrarPregunta('lenguajes', 500)">500</button>
+                    <button class="quinientos" onclick="mostrarPregunta('syntax', 500)">500</button>
+                </div>
+            </div>
+        </section>
+        <script src="./funciones.js"></script>
+    </body>
+</html>

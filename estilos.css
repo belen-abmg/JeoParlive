@@ -1,0 +1,75 @@
+
+/* Estilos de Body  */
+body{
+    background-image: url("./JP.jpg");
+    background-image: url("./JP.jpg"), linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,0));;
+    background-size:1300px 570px ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-color: #2C74B2;
+    color: black ;
+    text-align: center;
+    text-decoration: black;
+    font-family: "Secular" , sans-serif;
+    font-weight: bold;
+}
+
+/* Estilo de todos los botones */
+button:hover{
+    border: color #3c80bc;
+    background-color:#3c80bc ;
+    color: black;
+    cursor: pointer;
+}
+
+/* Estilos de el boton de JUGAR */
+.botonInicio, button {
+    font-family: "Secular" , sans-serif;
+    font-weight: bold;
+    font-size: 19px;
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: #3c80bc;
+    background-color: black;
+    color: white;
+}
+
+/* Estilos de las categorias */
+.categ{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    /* justify-content: space-around; */
+    font-size: larger;
+    font-weight: bold;
+}
+
+#cerrarPreg{
+    font-size: x-small;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: black;
+    background-color: transparent;
+    color: black;
+}
+
+/* Estilos del los botones de puntos  */
+.cien,.doscientos,.trescientos,.cuatrocientos,.quinientos{
+    width: 220px;
+    height: 65px;
+    margin: 14px;
+}
+
+.pagInicio,.pagCategorias{
+    padding-top: 400px;
+}
+
+/* Bloqueando Paginas */
+.pagPuntaje,.pagCategorias{
+    display: none;
+}
